@@ -1,0 +1,34 @@
+
+=== SUMMARY: Robustness and Validity Check ===
+
+PRIMARY RESULT (India, Stratified 5-fold CV):
+  - ROC-AUC: 0.866 ± 0.036
+  - Accuracy: 0.833 ± 0.028
+
+ROBUSTNESS CHECKS:
+  1. GroupKFold (by district):
+       - ROC-AUC: 0.839 ± 0.059
+       - Interpretation: Model generalizes to NEW districts
+
+  2. Temporal hold-out (2022-2024 future):
+       - ROC-AUC: 0.859
+       - Interpretation: Model generalizes to FUTURE time periods
+
+  3. Calibration:
+       - Brier Score: 0.136
+       - Interpretation: Predicted probabilities align with true frequencies
+
+  4. Feature comparison (vs baselines):
+       - Theory-informed AUC: 0.866
+       - Simple count AUC: 0.673
+       - Gain: +0.193 ROC-AUC
+
+EXTERNAL VALIDITY (India -> Brazil):
+  - Brazil waves: 25
+  - Brazil accuracy: 0.840
+  - Brazil ROC-AUC: 0.763
+
+CONCLUSION:
+  Model is robust across multiple validation schemes.
+  Replicator dynamics features significantly outperform simple baselines.
+  Ready for manuscript publication.

@@ -1,0 +1,4 @@
+model,roc_auc_mean,roc_auc_std
+Onset count only (simple),0.6731940133037695,0.03234560138592362
+Onset + baseline (normalized),0.7223203991130821,0.029656714173552687
+Full dynamics (theory-informed),0.8664767184035476,0.03613079447736833

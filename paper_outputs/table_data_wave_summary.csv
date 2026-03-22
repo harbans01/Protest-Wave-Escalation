@@ -1,0 +1,9 @@
+metric,value
+Total events (raw),175236.0
+India events (2016-2024),132353.0
+Unique districts (India),728.0
+Active districts (>=50 events),431.0
+Total detected waves,479.0
+Dissipating waves (label=0),275.0
+Escalating waves (label=1),204.0
+Escalating share,0.42588726513569936
